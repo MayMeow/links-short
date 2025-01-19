@@ -17,3 +17,4 @@ services:
       - DEBUG=false
     volumes:
       - ./data:/data
+      - /var/www
