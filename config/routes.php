@@ -68,8 +68,8 @@ return function (RouteBuilder $routes): void {
             $builder->prefix('Version1', ['path' => '/v1'], function (RouteBuilder $builder): void {
                 $builder->setExtensions(['json']);
                 $builder->resources('Links');
-                
-                $builder->fallbacks();
+
+                $builder->connect('/{controller}/{action}/*', []);
             });
         });
 

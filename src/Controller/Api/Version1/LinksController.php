@@ -25,7 +25,7 @@ class LinksController extends AppController
      *
      * @return \Cake\Http\Response|null|void Renders view
      */
-    public function all()
+    public function index()
     {
         $query = $this->Links->find();
         $links = $this->paginate($query);
