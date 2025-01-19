@@ -5,11 +5,11 @@
 - Salt is generated while image building
 
 ## What is implemented
-- []Landing page
-- [x]Links database
-- []Creating New links via API
-- []Authentication and authorization
-- [x]Wokring links redirect (from short ID)
+- [] Landing page
+- [x] Links database
+- [] Creating New links via API
+- [] Authentication and authorization
+- [x] Wokring links redirect (from short ID)
 
 ### Short ID
 
