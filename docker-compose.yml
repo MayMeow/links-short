@@ -13,5 +13,7 @@ services:
     image: ghcr.io/maymeow/links-short/app:latest
     user: "11235:11235"
     container_name: links-app
+    environment:
+      - DEBUG=false
     volumes:
       - ./data:/data
