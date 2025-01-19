@@ -57,6 +57,9 @@ return function (RouteBuilder $routes): void {
          */
         $builder->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
 
+        // Map /links/l to / so you can use url.tld/shortId
+        $builder->connect('/{short_id}', ['controller' => 'Links', 'action' => 'l'])->setPass(['short_id']);
+
         /*
          * ...and connect the rest of 'Pages' controller's URLs.
          */
