@@ -1,6 +1,6 @@
 services:
   nginx:
-    image:
+    image: ghcr.io/maymeow/links-short/proxy:latest
     container_name: links-proxy
     volumes_frop:
       - app
