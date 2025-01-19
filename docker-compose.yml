@@ -2,7 +2,7 @@ services:
   nginx:
     image: ghcr.io/maymeow/links-short/proxy:latest
     container_name: links-proxy
-    volumes_frop:
+    volumes_from:
       - app
     ports:
       - "8084:80"
