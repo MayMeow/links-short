@@ -14,4 +14,4 @@ services:
     user: "11235:11235"
     container_name: links-app
     volumes:
-      -./data:/data
+      - ./data:/data
