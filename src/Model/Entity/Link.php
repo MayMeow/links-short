@@ -4,8 +4,8 @@ declare(strict_types=1);
 namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
-use Cake\I18n\FrozenTime;
 use Cake\Utility\Text;
+use Maymeow\TinyId\UuidShortener;
 
 /**
  * Link Entity
@@ -55,8 +55,6 @@ class Link extends Entity
     public function setShortId(): void
     {
         $uuid = Text::uuid();
-        $hash = abs(crc32($uuid));
-
-        $this->short_id = $this->base62encode($hash);
+        $this->short_id = UuidShortener::encode($uuid, 36);
     }
 }

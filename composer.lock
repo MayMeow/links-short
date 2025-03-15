@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a82133f060632f8228fcd22bfe9f90d5",
+    "content-hash": "f4040d0a803204cd2a5cd88facaa8d41",
     "packages": [
         {
             "name": "cakephp/cakephp",
@@ -605,6 +605,44 @@
                 }
             ],
             "time": "2024-11-10T12:42:13+00:00"
+        },
+        {
+            "name": "maymeow/tiny-id",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MayMeow/tiny-id.git",
+                "reference": "1825873beabfa001124e557160dc2c7e233b3365"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MayMeow/tiny-id/zipball/1825873beabfa001124e557160dc2c7e233b3365",
+                "reference": "1825873beabfa001124e557160dc2c7e233b3365",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Maymeow\\TinyId\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "May Meow",
+                    "email": "3164256+MayMeow@users.noreply.github.com"
+                }
+            ],
+            "description": "Shortener UUID sortener",
+            "support": {
+                "issues": "https://github.com/MayMeow/tiny-id/issues",
+                "source": "https://github.com/MayMeow/tiny-id/tree/main"
+            },
+            "time": "2025-03-15T19:14:35+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -5826,7 +5864,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "maymeow/tiny-id": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

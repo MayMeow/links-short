@@ -9,6 +9,7 @@
         "cakephp/cakephp": "^5.0.0",
         "cakephp/migrations": "^4.0.0",
         "cakephp/plugin-installer": "^2.0",
+        "maymeow/tiny-id": "dev-main",
         "mobiledetect/mobiledetectlib": "^3.74"
     },
     "require-dev": {
